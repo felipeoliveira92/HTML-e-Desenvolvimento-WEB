@@ -1,0 +1,10 @@
+http é principal protocolo web
+
+para comentar
+<!--
+--!>
+
+<table>tabela
+<tr> são as linhas da table
+<th> cabeçalho
+<td> é o conteudo das linhas Table Data

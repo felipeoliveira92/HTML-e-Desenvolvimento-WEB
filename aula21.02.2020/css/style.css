@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(70, 59, 65);
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+}
+p{
+    color: chartreuse;
+    font-size: 30px;
+    text-align: center;
+}
+p:hover
+{
+    background-color: red;
+}
