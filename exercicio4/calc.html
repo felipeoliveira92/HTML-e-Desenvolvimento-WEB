@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="/js/javascript.js"></script>
+</head>
+<body>
+    <h2>Calculadora</h2>
+
+    <form>
+        <input type="number" id="num1" value=" ">    
+        :
+        <input type="number" id="num2" value=" ">
+        =
+        <input type="number" id="result" readonly>
+        <br><br>
+        <input type="button" onclick="soma()" value="Soma" />
+        <input type="button" onclick="subtracao()" value="subtracao" />
+        <input type="button" onclick="multiplicacao()" value="multiplicacao" />
+        <input type="button" onclick="divisao()" value="divisao" />
+    
+    </form>
+
+    <h1>historico</h1>
+    <h1 id="historico"></h1>
+    
+</body>
+</html>
