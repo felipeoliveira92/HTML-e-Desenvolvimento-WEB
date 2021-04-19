@@ -1,0 +1,30 @@
+body{
+    
+    background-color: white;
+    background-image: url("../imagens/plano_fundo.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.container{
+    background-color: gray;
+    opacity: 0.8;
+    width: 15cm;
+    padding-bottom: 20px;    
+
+}
+#card1{
+    position: absolute;
+    right: 50px;
+    top: 10px;    
+}
+#card2{
+    position: absolute;
+    right: 50px;
+    top: 270px;    
+}
+#card3{
+    position: absolute;
+    right: 50px;
+    top: 500px;    
+}

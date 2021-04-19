@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardárpio</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/cardapio.css">   
+
+    
+</head>
+<body>
+    <div class="container" >
+        <form id="cardapio">
+            <h1>Churrascaria $CHNEIDER</h1>
+            <h3>Prato Principal</h3>        
+    
+            <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" value="20">
+                <label class="custom-control-label" for="customRadio1">Massa - R$20,00</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" value="25">
+                <label class="custom-control-label" for="customRadio2">Carne - R$25,00</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" value="30">
+                <label class="custom-control-label" for="customRadio3">Peixe - R$30,00</label>
+            </div>
+    
+            <h3>Acompanhamentos</h3>      
+             
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" name="acompanhamento" class="custom-control-input" id="legumes" value="5">
+                <label class="custom-control-label" for="legumes">Legumes - R$5,00</label>
+            </div>
+    
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" name="acompanhamento" class="custom-control-input" id="farofa" value="5">
+                <label class="custom-control-label" for="farofa">Farofa - R$5,00</label>
+            </div>
+    
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" name="acompanhamento" class="custom-control-input" id="fritas" value="5">
+                <label class="custom-control-label" for="fritas">Fritas - R$5,00</label> 
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" name="acompanhamento" class="custom-control-input" id="saladas" value="5">
+                <label class="custom-control-label" for="saladas">Saladas - R$5,00</label> 
+            </div> 
+    
+            <h3>Convênios/Descontos</h3>
+            <select class="custom-select"  id="desconto" name="convenio">
+                <option selected value="0">selecione uma opção</option>
+                <option value="10">Fatec-R$10,00</option> 
+                <option value="5" >Toyota-R$5,00</option>
+                <option value="5">West rock-R$5,00</option>
+                <option value="5">Lanxess-R$5,00</option>
+            </select>        
+    
+            <h3>Observações</h3>
+    
+            <textarea name="observacoes" id="observacoes" cols="30" rows="5"></textarea><br>              
+            <button type="submit" id="btn1" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo"><img src="./imagens/teste.svg" alt="" srcset=""> Calcular</button>
+            
+        </form>               
+    </div>
+    <div class="card" style="width: 18rem;" id="card1">
+        <img src="./imagens/massa.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">massa</p>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;" id="card2">
+        <img src="./imagens/carne.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Carne</p>
+        </div>
+    </div> 
+    <div class="card" style="width: 18rem;" id="card3">
+        <img src="./imagens/peixe.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Peixe</p>
+        </div>
+    </div>    
+    <!-- modal-->
+    <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Pedido</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            <h4>Extrato</h4>
+
+                            <p id="p_principal"></p>
+                            <p id="acompanhamento"></p>
+                            <p id="convenios"></p>
+
+                            <h1 id="total">h1</h1>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+                        <!--<button type="button" class="btn btn-primary">Salvar mudanças</button>-->
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+        
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>    
+<script src="./js/cardapio.js"></script>  
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+</body>    
+</html>
