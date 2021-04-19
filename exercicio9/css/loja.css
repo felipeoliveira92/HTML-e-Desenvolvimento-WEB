@@ -1,0 +1,52 @@
+body{
+    
+    background-color: white;
+    background-image: url("../imagens/plano_fundo.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.container{
+    position: fixed;
+    background-color: gray;
+    opacity: 0.8;
+    width: 15cm;
+    padding-bottom: 20px;
+    left: 25px;    
+
+}
+#card1{
+    position: relative;
+    left: 750px;
+    top: 5px;
+    margin-bottom: 10px;    
+}
+#card2{
+    position: relative;
+    left: 650px;     
+    margin-bottom: 10px;   
+}
+#card3{
+    position: relative;
+    left: 750px; 
+    margin-bottom: 10px;   
+}
+#card4{
+    position: relative;
+    left: 650px;  
+    margin-bottom: 10px;  
+}
+#card5{
+    position: relative;
+    left: 750px;   
+    margin-bottom: 10px; 
+}
+#frete{
+    display: none;    
+}
+#valido{
+    display: none;
+}
+#invalido{
+    display: none;
+}
